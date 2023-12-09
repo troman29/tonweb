@@ -8,8 +8,8 @@ let myCrypto = null;
 
 if (isCryptoAvailable) { // web
     // nothing to do
-} else { // nodejs or react-native
-    myCrypto = require('isomorphic-webcrypto');
+} else { // nodejs
+    myCrypto = require('crypto').webcrypto;
 }
 
 /**
